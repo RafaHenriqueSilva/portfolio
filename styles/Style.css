@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria:#000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22d4fd;
+    --cor-hover: #272727;
+
+    --letra-titulo: 'Krona One', sans-serif;
+    --letra-paragrafo: "montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+     /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 10%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__links {
+    font-family: var(--letra-paragrafo);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+
+.layout {
+    padding: 6% 10%;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+      
+}
+
+.layout__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.layout__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--letra-titulo);
+}
+
+.layout__conteudo__paragrafo {
+    font-size: 1.5rem;
+    font-family: var(--letra-paragrafo);
+}
+
+.layout__links {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.layout__links__titulo {
+    font-family: var(--letra-titulo);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.layout__links__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px double var(--cor-terciaria);
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 21.5px 0;
+    font-family: var(--letra-paragrafo);
+    font-size: 1.5rem;
+    font-weight: 600;   
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
+.layout__links__buttons:hover {
+    background-color: var(--cor-hover);
+}
+
+.layout__imagem {
+    width: 50%;
+    padding-left: 3%; 
+}
+
+.footer {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    padding: 24px;
+    font-family: var(--letra-paragrafo);
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+@media (max-width: 1180px) {
+
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .layout {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .layout__conteudo {
+        width: auto;
+    }
+
+}
